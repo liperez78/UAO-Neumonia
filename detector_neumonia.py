@@ -92,7 +92,7 @@ class App:
             self.file_path = file_path
 
     def run_model(self):
-        image_array = np.array(self.image.resize((224, 224))) / 255.0
+        image_array = np.array(self.image.resize((150, 150))) / 255.0
         image_array = np.expand_dims(image_array, axis=0)
         prediction = self.model.predict(image_array)
         probability = prediction[0][0]
