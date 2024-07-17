@@ -3,6 +3,9 @@ from tkinter import ttk, font, filedialog, Text, StringVar
 from PIL import ImageTk, Image
 import numpy as np
 from tensorflow.keras.models import load_model
+from reportlab.lib.pagesizes import letter
+from reportlab.pdfgen import canvas
+import csv  # Importa el módulo csv
 
 class App:
     def __init__(self):
@@ -112,12 +115,33 @@ class App:
         self.button1.config(state="disabled")
 
     def create_pdf(self):
-        # Implement PDF creation functionality
-        pass
+        file_path = filedialog.asksaveasfilename(defaultextension=".pdf",
+                                                 filetypes=[("PDF files", "*.pdf")])
+        if file_path:
+            c = canvas.Canvas(file_path, pagesize=letter)
+            c.drawString(100, 750, "Reporte de Diagnóstico de Neumonía")
+            c.drawString(100, 730, f"Cédula Paciente: {self.ID.get()}")
+            c.drawString(100, 710, f"Resultado: {self.text2.get('1.0', 'end-1c')}")
+            c.drawString(100, 690, f"Probabilidad: {self.text3.get('1.0', 'end-1c')}")
+            
+            # Save the current image as a temporary file
+            temp_image_path = "temp_image.png"
+            self.image.save(temp_image_path)
+            
+            # Draw the image on the PDF
+            c.drawImage(temp_image_path, 100, 400, width=200, height=200)
+
+            c.showPage()
+            c.save()
 
     def save_results_csv(self):
-        # Implement save to CSV functionality
-        pass
+        file_path = filedialog.asksaveasfilename(defaultextension=".csv",
+                                                 filetypes=[("CSV files", "*.csv")])
+        if file_path:
+            with open(file_path, mode='w', newline='') as file:
+                writer = csv.writer(file)
+                writer.writerow(['Cédula Paciente', 'Resultado', 'Probabilidad'])
+                writer.writerow([self.ID.get(), self.text2.get('1.0', 'end-1c').strip(), self.text3.get('1.0', 'end-1c').strip()])
 
 if __name__ == "__main__":
     App()
