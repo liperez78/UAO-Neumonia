@@ -55,14 +55,11 @@ Versión Python 3.12.4
 
 ## detector_neumonia.py
 
-Contiene el diseño de la interfaz gráfica utilizando Tkinter.
-
-Los botones llaman métodos contenidos en otros scripts.
-
+Este código crea una aplicación de escritorio para la detección de neumonía a partir de imágenes radiográficas. Permite cargar una imagen, ejecutar un modelo pre-entrenado para hacer una predicción, y generar un informe en PDF con los resultados. También incluye funcionalidades para borrar datos ingresados y guardar resultados en un archivo CSV (aún no implementado
 
 ## model.py
 
-Script que lee el archivo binario del modelo de red neuronal convolucional previamente entrenado llamado 'WilhemNet86.h5'.
+Script carga un modelo Keras previamente entrenado para la detección de neumonía, configura la función de pérdida de entropía cruzada binaria sin reducción, compila el modelo y define una función para predecir si una imagen muestra signos de neumonía
 
 ## mi_modelo_entrenado.H5
 
