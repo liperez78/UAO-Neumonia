@@ -17,8 +17,7 @@ Aplicación de una técnica de explicación llamada Grad-CAM para resaltar con u
 A continuación le explicaremos cómo empezar a utilizarla.
 
 Requerimientos necesarios para el funcionamiento:
-
-- Instale Anaconda para Windows siguiendo las siguientes instrucciones:
+1.  Instale Anaconda para Windows siguiendo las siguientes instrucciones:
   https://docs.anaconda.com/anaconda/install/windows/
 
 - Abra Anaconda Prompt y ejecute las siguientes instrucciones:
@@ -32,6 +31,13 @@ Requerimientos necesarios para el funcionamiento:
   pip install -r requirements.txt
 
   python detector_neumonia.py
+  
+2. Importar las siguientes bibliotecas:
+tkinter: Biblioteca estándar de Python para crear interfaces gráficas de usuario.
+PIL: Biblioteca para abrir, manipular y guardar archivos de imagen.
+numpy: Biblioteca para trabajar con matrices y realizar cálculos numéricos.
+tensorflow.keras.models: Utilizado para cargar un modelo pre-entrenado de Keras.
+reportlab: Biblioteca para generar documentos PDF.  
 
 Uso de la Interfaz Gráfica:
 
@@ -57,9 +63,9 @@ Los botones llaman métodos contenidos en otros scripts.
 
 Script que lee el archivo binario del modelo de red neuronal convolucional previamente entrenado llamado 'WilhemNet86.h5'.
 
-## grad_cam.py
+## mi_modelo_entrenado.H5
 
-Script que recibe la imagen y la procesa, carga el modelo, obtiene la predicción y la capa convolucional de interés para obtener las características relevantes de la imagen.
+Permite realizar la carga y predicciónde imegenes del módelo entrenado.
 
 ---
 
