@@ -47,6 +47,7 @@ reportlab: Biblioteca para generar documentos PDF.
 - Presione el botón 'Guardar' para almacenar la información del paciente en un archivo excel con extensión .csv
 - Presione el botón 'PDF' para descargar un archivo PDF con la información desplegada en la interfaz
 - Presión el botón 'Borrar' si desea cargar una nueva imagen
+- Se adjunto evidencias de la ejecuçión archivo denominado "resultados ejecutados del detector_neumonia.pptx"
 
 Versión Python 3.12.4
 ---
