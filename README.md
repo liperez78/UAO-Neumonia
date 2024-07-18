@@ -83,6 +83,10 @@ Después de cada bloque convolucional se encuentra una capa de max pooling y des
 
 Para regularizar el modelo utilizamos 3 capas de Dropout al 20%; dos en los bloques 4 y 5 conv y otra después de la 1ra capa Dense.
 
+## Pruebas unitarias para el código detector_neumonia
+Para realizar pruebas unitarias en este código, se trabaja el módulo unittest de Python. Se creanr dos pruebas unitarias para las funciones load_img_file y run_model
+con el archivo  test_app.py
+
 ## Acerca de Grad-CAM
 
 Es una técnica utilizada para resaltar las regiones de una imagen que son importantes para la clasificación. Un mapeo de activaciones de clase para una categoría en particular indica las regiones de imagen relevantes utilizadas por la CNN para identificar esa categoría.
