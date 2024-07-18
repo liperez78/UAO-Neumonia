@@ -67,6 +67,7 @@ Script que lee el archivo binario del modelo de red neuronal convolucional previ
 ## mi_modelo_entrenado.H5
 
 Permite realizar la carga y predicciónde imegenes del módelo entrenado.
+URL de acceso: https://drive.google.com/file/d/1-vwwTEc0VI8zoctUIi2A95rNnKZJ0vGy/view?usp=drive_link
 
 ---
 
