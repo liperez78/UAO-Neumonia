@@ -56,7 +56,7 @@ Versión Python 3.12.4
 
 ## detector_neumonia.py
 
-Este código crea una aplicación de escritorio para la detección de neumonía a partir de imágenes radiográficas. Permite cargar una imagen, ejecutar un modelo pre-entrenado para hacer una predicción, y generar un informe en PDF con los resultados. También incluye funcionalidades para borrar datos ingresados y guardar resultados en un archivo CSV (aún no implementado
+Este código crea una aplicación de escritorio para la detección de neumonía a partir de imágenes radiográficas. Permite cargar una imagen, ejecutar un modelo pre-entrenado para hacer una predicción, y generar un informe en PDF con los resultados. También incluye funcionalidades para borrar datos ingresados y guardar resultados en un archivo CSV 
 
 ## model.py
 
@@ -64,7 +64,7 @@ Script carga un modelo Keras previamente entrenado para la detección de neumon�
 
 ## mi_modelo_entrenado.H5
 
-Permite realizar la carga y predicciónde imegenes del módelo entrenado.
+Permite realizar la carga y predicción de imegenes del módelo entrenado.
 URL de acceso: https://drive.google.com/file/d/1-vwwTEc0VI8zoctUIi2A95rNnKZJ0vGy/view?usp=drive_link
 
 ---
