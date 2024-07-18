@@ -87,6 +87,11 @@ Para regularizar el modelo utilizamos 3 capas de Dropout al 20%; dos en los bloq
 Para realizar pruebas unitarias en este código, se trabaja el módulo unittest de Python. Se creanr dos pruebas unitarias para las funciones load_img_file y run_model
 con el archivo  test_app.py
 
+Resultados de las pruebas unitarias exitoso (test_results.cvs y con errores en un test.errors.cvs), para eso necesitos los siguientes códigos:
+
+generate_csv.py
+run_tests.py
+
 ## Acerca de Grad-CAM
 
 Es una técnica utilizada para resaltar las regiones de una imagen que son importantes para la clasificación. Un mapeo de activaciones de clase para una categoría en particular indica las regiones de imagen relevantes utilizadas por la CNN para identificar esa categoría.
