@@ -1,9 +1,18 @@
-FROM python:latest
+# Usa una imagen base de Python
+FROM python:3.12.4
 
-RUN apt-get update -y && \
-    apt-get install python3-opencv -y 
+# Establece el directorio de trabajo
+WORKDIR /app
 
-WORKDIR /home/src
+# Copia los archivos del proyecto al directorio de trabajo
+COPY . .
 
-COPY . ./
+# Instalar las dependencias
+RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
+
+# Exponer el puerto si la aplicación usa uno (opcional)
+# EXPOSE 8080
+
+# Comando para ejecutar la aplicación
+CMD ["python", "app.py"]
