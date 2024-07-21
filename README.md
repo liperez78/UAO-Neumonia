@@ -78,6 +78,14 @@ Resultados de las pruebas unitarias exitoso (test_results.cvs) y con errores en 
 generate_csv.py
 run_tests.py
 
+## Pruebas de usuabilidad
+pruebas unitarias en la interfaz de usuario (UI) de una aplicación Tkinter, con pytest junto con herramientas de simulación y verificación.
+Se debe crear el siguiente codigo
+test_ui.py
+y se debe ejcutar pytest test_ui.py
+El codigo va analizando cada boton de la aplicacion y genera los resultados de la prueba
+
+
 ## Acerca de Grad-CAM
 
 Es una técnica utilizada para resaltar las regiones de una imagen que son importantes para la clasificación. Un mapeo de activaciones de clase para una categoría en particular indica las regiones de imagen relevantes utilizadas por la CNN para identificar esa categoría.
