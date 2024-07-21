@@ -78,7 +78,7 @@ Resultados de las pruebas unitarias exitoso (test_results.cvs) y con errores en 
 generate_csv.py
 run_tests.py
 
-## Pruebas de usuabilidad
+## Pruebas de usuabilidad para el código detector_neumonia
 pruebas unitarias en la interfaz de usuario (UI) de una aplicación Tkinter, con pytest junto con herramientas de simulación y verificación.
 Se debe crear el siguiente codigo
 test_ui.py
