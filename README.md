@@ -70,20 +70,20 @@ URL de acceso: https://drive.google.com/file/d/1-vwwTEc0VI8zoctUIi2A95rNnKZJ0vGy
 ---
 
 ## Pruebas unitarias para el código detector_neumonia
-Para realizar pruebas unitarias en este código, se trabaja el módulo unittest de Python. Se crean dos pruebas unitarias para las funciones load_img_file y run_model
-con el archivo  test_app.py
+Para realizar pruebas unitarias en este código, se trabaja el módulo unittest de Python. Se crean dos pruebas unitarias para las siguientes funciones:
+load_img_file: Con esta función asegura la carga de la imagen correctamente desde una ruta dada y la devuelve en el formato esperado.
+run_model: Toma la imagen (o datos) y produce una salida que es válida según el modelo entrenado.
 
-Resultados de las pruebas unitarias exitoso (test_results.cvs) y con errores en un (test.errors.cvs), para eso se necesita los siguientes códigos:
+Con el archivo  test_app.py: Se define las variables y se ejecuta las pruebas unitarias
+
+Resultados de las pruebas unitarias exitosas las genera en el archivo "test_results.cvs", y con errores las genera en el archivo "test.errors.cvs", para eso se necesita los siguientes códigos:
 
 generate_csv.py
 run_tests.py
 
 ## Pruebas de usuabilidad para el código detector_neumonia
 pruebas unitarias en la interfaz de usuario (UI) de una aplicación Tkinter, con pytest junto con herramientas de simulación y verificación.
-Se debe crear el siguiente codigo
-test_ui.py
-y se debe ejcutar test test_ui.py
-El codigo va analizando cada boton de la aplicacion y genera los resultados de la prueba
+Se debe crear el siguiente archivo de prueba "test_ui.py" y así mismo se debe ejecutar. Este archivo se encargará de simular las interacciones con la UI y verificar que los botones y otros elementos funcionen como se espera.
 
 
 ## Acerca de Grad-CAM
