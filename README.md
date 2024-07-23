@@ -70,7 +70,7 @@ URL de acceso: https://drive.google.com/file/d/1-vwwTEc0VI8zoctUIi2A95rNnKZJ0vGy
 ---
 
 ## Pruebas unitarias para el código detector_neumonia
-Para realizar pruebas unitarias en este código, se trabaja el módulo unittest de Python. Se creanr dos pruebas unitarias para las funciones load_img_file y run_model
+Para realizar pruebas unitarias en este código, se trabaja el módulo unittest de Python. Se crean dos pruebas unitarias para las funciones load_img_file y run_model
 con el archivo  test_app.py
 
 Resultados de las pruebas unitarias exitoso (test_results.cvs) y con errores en un (test.errors.cvs), para eso se necesita los siguientes códigos:
