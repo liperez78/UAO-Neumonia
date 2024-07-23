@@ -82,7 +82,7 @@ run_tests.py
 pruebas unitarias en la interfaz de usuario (UI) de una aplicación Tkinter, con pytest junto con herramientas de simulación y verificación.
 Se debe crear el siguiente codigo
 test_ui.py
-y se debe ejcutar pytest test_ui.py
+y se debe ejcutar test test_ui.py
 El codigo va analizando cada boton de la aplicacion y genera los resultados de la prueba
 
 
