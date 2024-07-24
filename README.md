@@ -84,10 +84,5 @@ pruebas unitarias en la interfaz de usuario (UI) de una aplicación Tkinter, con
 Se debe crear el siguiente archivo de prueba "test_ui.py" y así mismo se debe ejecutar. Este archivo se encargará de simular las interacciones con la UI y verificar que los botones y otros elementos funcionen como se espera.
 
 
-## Acerca de Grad-CAM
-
-Es una técnica utilizada para resaltar las regiones de una imagen que son importantes para la clasificación. Un mapeo de activaciones de clase para una categoría en particular indica las regiones de imagen relevantes utilizadas por la CNN para identificar esa categoría.
-
-Grad-CAM realiza el cálculo del gradiente de la salida correspondiente a la clase a visualizar con respecto a las neuronas de una cierta capa de la CNN. Esto permite tener información de la importancia de cada neurona en el proceso de decisión de esa clase en particular. Una vez obtenidos estos pesos, se realiza una combinación lineal entre el mapa de activaciones de la capa y los pesos, de esta manera, se captura la importancia del mapa de activaciones para la clase en particular y se ve reflejado en la imagen de entrada como un mapa de calor con intensidades más altas en aquellas regiones relevantes para la red con las que clasificó la imagen en cierta categoría.
 
 
