@@ -69,17 +69,15 @@ URL de acceso: https://drive.google.com/file/d/1-vwwTEc0VI8zoctUIi2A95rNnKZJ0vGy
 
 ---
 
-## Pruebas unitarias para el código detector_neumonia
-Para realizar pruebas unitarias en este código, se trabaja el módulo unittest de Python. Se crean dos pruebas unitarias para las siguientes funciones:
-load_img_file: Con esta función asegura la carga de la imagen correctamente desde una ruta dada y la devuelve en el formato esperado.
-run_model: Toma la imagen (o datos) y produce una salida que es válida según el modelo entrenado.
+Este conjunto de pruebas verifica el comportamiento del método load_img_file de la clase App bajo diferentes condiciones:
+
+Cuando se pasa una imagen válida ('Torax.jpg' y 'otra_imagen.jpg').
+Cuando se pasa un valor nulo (None).
+Cuando se pasa una imagen inexistente ('imagen_inexistente.jpg').
+Cada prueba utiliza aserciones (self.assertTrue y self.assertFalse) para verificar si el método retorna el valor esperado, mostrando un mensaje de error específico si la prueba falla.
 
 Con el archivo  test_app.py: Se define las variables y se ejecuta las pruebas unitarias
 
-Resultados de las pruebas unitarias exitosas las genera en el archivo "test_results.cvs", y con errores las genera en el archivo "test.errors.cvs", para eso se necesita los siguientes códigos:
-
-generate_csv.py
-run_tests.py
 
 ## Pruebas de usuabilidad para el código detector_neumonia
 pruebas unitarias en la interfaz de usuario (UI) de una aplicación Tkinter, con pytest junto con herramientas de simulación y verificación.
