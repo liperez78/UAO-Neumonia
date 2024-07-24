@@ -83,6 +83,7 @@ Con el archivo  test_app.py: Se define las variables y se ejecuta las pruebas un
 pruebas unitarias en la interfaz de usuario (UI) de una aplicación Tkinter, con pytest junto con herramientas de simulación y verificación.
 Se debe crear el siguiente archivo de prueba "test_ui.py" y así mismo se debe ejecutar. Este archivo se encargará de simular las interacciones con la UI y verificar que los botones y otros elementos funcionen como se espera.
 
-
+##Imagen creada del docker 
+Se adjunta imagen que se crea en el docker en el archivo imagen docker.docx 
 
 
